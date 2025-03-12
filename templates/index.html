@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Groq Whisper Test</title>
+</head>
+<body>
+  <h1>Groq Whisper Test</h1>
+  
+  <!-- TTS Section -->
+  <h2>Text to Audio</h2>
+  <form id="ttsForm">
+    <label for="ttsText">Enter text:</label>
+    <input type="text" id="ttsText" name="text" required>
+    <button type="submit">Generate Audio</button>
+  </form>
+  <br>
+  <audio id="ttsAudio" controls></audio>
+  
+  <hr>
+
+  <!-- STT Section -->
+  <h2>Audio to Text</h2>
+  <p>Record from mic and transcribe:</p>
+  <button id="recordBtn">Start Recording</button>
+  <button id="stopBtn" disabled>Stop Recording</button>
+  
+  <h3>Transcription Result:</h3>
+  <div id="transcriptionOutput"></div>
+  
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
