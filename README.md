@@ -76,5 +76,5 @@ Feel free to fork this project and submit pull requests.
 This project is licensed under the MIT License.
 
 ## Author
-Ali Ahmad
+Ali Ahmad 
 
